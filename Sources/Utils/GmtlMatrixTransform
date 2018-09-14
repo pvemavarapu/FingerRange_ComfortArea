@@ -1,0 +1,32 @@
+#ifndef _GMTLMATRIXTRANSFORM_H
+#define _GMTLMATRIXTRANSFORM_H
+
+#include <gmtl/Matrix.h>
+#include <gmtl/MatrixOps.h>
+
+#include <osg/MatrixTransform>
+
+namespace osg {
+
+/** 
+*	GmtlMatrixTransform - is a subclass of MatrixTransform that takes a gmtl::Matrix44f
+*	and represents a 4x4 transformation of its children from local coordinates
+*	into the Transform's parent coordinates.
+*/
+class GmtlMatrixTransform : public MatrixTransform
+{
+  public :
+	GmtlMatrixTransform();
+	GmtlMatrixTransform(const gmtl::Matrix44f& matrix);
+	GmtlMatrixTransform(const GmtlMatrixTransform&, const CopyOp& copyop=CopyOp::SHALLOW_COPY);
+
+	~GmtlMatrixTransform();
+
+	META_Node(osg, GmtlMatrixTransform);
+	
+	void setMatrix(const gmtl::Matrix44f& matrix);
+	const gmtl::Matrix44f getMatrix();
+};
+
+}
+#endif

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Experiment">
+      <UniqueIdentifier>{519440d8-033f-4b7e-ab9d-542134909bdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TCP_Server">
+      <UniqueIdentifier>{a629f52c-8b71-4d09-be7e-fa12174d54d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SceneObjects">
+      <UniqueIdentifier>{adb6b847-d8a4-493d-be18-b6e6bd98cce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Experiment">
+      <UniqueIdentifier>{d64d6f53-6a63-4924-bba1-0de93f86691e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SceneObjects">
+      <UniqueIdentifier>{fade8c85-f36a-4291-86b8-14f4daa3f927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\TCP_Server">
+      <UniqueIdentifier>{9083ddbe-4af7-4f26-a65c-b8242b52dd67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Sources\Experiment\Experiment.h">
+      <Filter>Header Files\Experiment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\Experiment\InstructionsText.h">
+      <Filter>Header Files\Experiment</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\TCP_Server\CThread.h">
+      <Filter>Header Files\TCP_Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\TCP_Server\ServerSocket.h">
+      <Filter>Header Files\TCP_Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\TCP_Server\SocketSender.h">
+      <Filter>Header Files\TCP_Server</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\SceneObjects\ObjectDisplay.h">
+      <Filter>Header Files\SceneObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\FingerRange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sources\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Experiment\Experiment.cpp">
+      <Filter>Source Files\Experiment</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\TCP_Server\CThread.cpp">
+      <Filter>Source Files\TCP_Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\TCP_Server\ServerSocket.cpp">
+      <Filter>Source Files\TCP_Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\TCP_Server\SocketSender.cpp">
+      <Filter>Source Files\TCP_Server</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\SceneObjects\ObjectDisplay.cpp">
+      <Filter>Source Files\SceneObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\FingerRange.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

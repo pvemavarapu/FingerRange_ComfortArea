@@ -1,0 +1,14 @@
+void Application::generateXYZ(){
+	fstream _obj_pos_file;
+
+	_obj_pos_file.open("D:/Users/pvv8654/Research/Programming/Dual-touch/DualTouch_SelTask/trunk2/Resources/object_positions.txt", ios::out);
+
+	for(int i = 0; i < 1000; i++){
+		float x = (4.1 * ((float)rand()/RAND_MAX)) + (-2.05);//static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/((1.5 ))));
+		float y = (2.2 * ((float)rand()/RAND_MAX)) + (-1.1);//static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/((2.0))));
+		float z = (2.0 * ((float)rand()/RAND_MAX)) + (-2.0);//static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/((3.0))));
+
+		_obj_pos_file << x << "|" << y << "|" << z << endl;
+	}
+	_obj_pos_file.close();
+}
